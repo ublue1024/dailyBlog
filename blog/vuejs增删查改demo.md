@@ -9,3 +9,5 @@ demo博客地址：http://blog.csdn.net/qq_26598303/article/details/53468399
 
 vue页面的model是与data()一一对应的，data里应该是单纯的JSON对象，如果想从数据库里获取数据来渲染页面，这个步骤应该放在钩子方法mounted（）里。![图片](http://github.com/ublue1024/dailyBlog/raw/master/blogImg/img121501.png)
 
+<slot>标签说明：除非子组件模板包含至少一个<slot>接口，否则父组件的内容将会被丢弃。当子组件模板只有一个没有属性的插槽时，父组件传入的整个内容片段将插入到插槽所在的DOM位置，并替换掉插槽标签本身。
+
